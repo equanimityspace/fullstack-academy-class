@@ -1,116 +1,48 @@
-/* Produce Section */
-.produce {
-  margin-left: 50px;
-}
-
-.produce_header {
-  width: 775px;
-  height: auto;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: aliceblue;
-}
-
-.fruit {
-  font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 150px;
-  padding-left: 15px;
-  background-color: aliceblue;
-}
-
-.vegetables {
-  font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 150px;
-  padding-left: 15px;
-  margin-left: 30px;
-  background-color: aliceblue;
-}
-
-/* Meats Section */
-.meat {
-  margin-left: 50px;
-}
-
-.meat_header {
-  width: 775px;
-  height: auto;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: aliceblue;
-}
-
-.beef {
-  font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 167px;
-  padding-left: 15px;
-  background-color: aliceblue;
-}
-
-.pork_chicken {
-  font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 150px;
-  padding-left: 15px;
-  margin-left: 30px;
-  background-color: aliceblue;
-}
-
-/* Pantry Section */
+/* gonna make use of flex containers because they seem neat */
+.produce,
+.meat,
 .pantry {
-  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 30px;
 }
 
+.produce_header,
+.meat_header,
 .pantry_header {
-  width: 775px;
-  height: auto;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   background-color: aliceblue;
+  width: 750px;
+  border: 4px solid black;
+  border-radius: 10px;
+  padding-left: 15px;
+  /* if I make it so that the width cannot shrink lower than 700px
+  then make the margin extend on the rest of the page, list boxes will be pushed below */
+  flex-shrink: 0;
+  margin-right: 100%;
 }
 
-.top_shelf {
-  font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 150px;
-  padding-left: 15px;
-  background-color: aliceblue;
-}
-
-.middle_shelf {
-  font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 150px;
-  padding-left: 15px;
-  margin-left: 30px;
-  background-color: aliceblue;
-}
-
+.fruit,
+.vegetables,
+.beef,
+.pork_chicken,
+.top_shelf,
+.middle_shelf,
 .bottom_shelf {
+  background-color: aliceblue;
   font-style: italic;
-  display: inline-table;
-  width: 225px;
-  height: 150px;
+  width: 200px;
   padding-left: 15px;
   margin-left: 30px;
-  background-color: aliceblue;
+  height: 160px;
 }
 
-/* format all img elements */
+/* fix img because they are huge and I can't see the page properly. Maybe temporary, maybe not */
 img {
-  height: 150px;
-  margin-left: 30px;
+  height: 160px;
+  padding-left: 30px;
 }
 
 /* cool little effect when hovering over list items */
