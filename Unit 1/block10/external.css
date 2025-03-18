@@ -1,0 +1,36 @@
+body {
+  background-color: slategray !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  height: 30vh;
+  width: 100%;
+  padding: 20px;
+  background-color: slategray;
+}
+
+.sun,
+.moon {
+  height: 20vh;
+  position: absolute;
+  bottom: 50vh;
+  right: 25vw;
+}
+
+.sun {
+  z-index: 0;
+}
+
+.moon {
+  opacity: 0.65;
+  z-index: 1;
+}

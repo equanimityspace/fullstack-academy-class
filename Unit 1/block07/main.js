@@ -17,7 +17,7 @@ const c = 21 + 18;
 
 // Also declare the string as a const because it will not change
 const message =
-  "You have received this message because you have been chosen to open an important vault. Here is the secret combination:\n";
+  "You have received this message because you have been chosen to open an important vault. Here is the secret combination:";
 
 // Create an alertbox in my html page displaying the message and the code seperated by -
-alert(message + `${a} - ${b} - ${c}`);
+alert(message + "\n" + `${a} - ${b} - ${c}`);
