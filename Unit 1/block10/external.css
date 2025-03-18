@@ -23,14 +23,15 @@ form {
   height: 20vh;
   position: absolute;
   bottom: 50vh;
-  right: 25vw;
 }
 
 .sun {
   z-index: 0;
+  right: 0px;
 }
 
 .moon {
   opacity: 0.65;
   z-index: 1;
+  left: 0px;
 }
