@@ -100,7 +100,7 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  return `${getMax(numbers)} - ${getMin(numbers)}`;
+  return getMax(numbers) - getMin(numbers);
 }
 
 /**
