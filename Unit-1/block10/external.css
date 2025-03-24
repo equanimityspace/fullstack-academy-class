@@ -1,6 +1,5 @@
 body {
-  background-color: slategray !important;
-  background: no-repeat left top;
+  background: no-repeat left top slategray !important;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
