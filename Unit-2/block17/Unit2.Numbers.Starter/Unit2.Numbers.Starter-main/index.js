@@ -46,12 +46,12 @@ class Numbers {
     );
   }
   greaterThan(target) {
-    return this.data.filter((num, target) => num > target);
+    return this.data.filter((num) => num > target);
   }
   howMany(target) {
     let count = 0;
-    for (let i of this.data) {
-      if (i === target) {
+    for (let num of this.data) {
+      if (num === target) {
         count += 1;
       }
     }
