@@ -52,7 +52,7 @@ class Numbers {
     let count = 0;
     for (let num of this.data) {
       if (num === target) {
-        count += 1;
+        count++;
       }
     }
     return count;
