@@ -1,9 +1,9 @@
 // The plan:
 // make arr for odd even bank - done
 // add num to bank, clear form - done
-// error if not int
-// func oddOrEven
-// render in Odd, Even, bank
+// error if not int - done, also done for if blank
+// func oddOrEven - done
+// render in Odd, Even, bank - done (with main())
 
 // get html components
 const form = document.querySelector("form");
