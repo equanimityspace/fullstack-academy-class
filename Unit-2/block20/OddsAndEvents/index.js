@@ -54,7 +54,7 @@ form.addEventListener("submit", function (event) {
   const num = data.get("number");
 
   // make sure that input is a number, if so add to num bank
-  if (typeof (num * 1) === typeof 1) {
+  if (typeof (num * 1) === typeof 1 && num !== "") {
     arrBank.push(num);
   } else {
     return;
@@ -66,8 +66,8 @@ form.addEventListener("submit", function (event) {
 
 // sort 1 button: sorts the last item in list
 sortOne.addEventListener("click", function (event) {
-  // remove and manipulate last number in number bank
-  const num = arrBank.pop();
+  // remove and manipulate first number in number bank
+  const num = arrBank.shift();
   const boolEven = checkIfEven(num);
   // check if even or odd
   if (boolEven === true) {
@@ -80,6 +80,7 @@ sortOne.addEventListener("click", function (event) {
 });
 
 sortAll.addEventListener("click", function (event) {
+  // iterate through arrBank to check if each num is even or odd
   for (let num of arrBank) {
     if (checkIfEven(num)) {
       arrEven.push(num);
@@ -87,6 +88,8 @@ sortAll.addEventListener("click", function (event) {
       arrOdd.push(num);
     }
   }
+
+  // clear arr bank
   arrBank = [];
   main();
 });
