@@ -139,7 +139,7 @@ const main = (objList) => {
   avgStartPri(objList);
 };
 
-// render first two freelancers & avg price 
+// render first two freelancers & avg price
 renderNewLine(freelancers[0]);
 renderNewLine(freelancers[1]);
 avgStartPri(freelancers);
