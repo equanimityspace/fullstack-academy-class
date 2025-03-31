@@ -31,3 +31,9 @@ form {
   justify-content: center;
   margin-top: 15px;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
