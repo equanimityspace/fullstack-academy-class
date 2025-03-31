@@ -78,7 +78,6 @@ const renderParties = async () => {
     descriptionOutput.append(newDescription);
   }
 };
-renderParties();
 
 const deleteButton = document.querySelector("#buttons");
 deleteButton.addEventListener("click", async function (event) {
@@ -104,3 +103,6 @@ form.addEventListener("submit", async function (event) {
   await addNewParty(formData);
   await renderParties();
 });
+
+// do initial render
+renderParties();
