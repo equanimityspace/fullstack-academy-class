@@ -17,8 +17,12 @@
           placeholder="Party Name"
           type="text"
         />
-        <input id="inputDate" name="date" placeholder="Number" type="text" />
-        <input id="inputTime" name="time" placeholder="Time" type="text" />
+        <input
+          id="inputDate"
+          name="date"
+          placeholder="Date"
+          type="datetime-local"
+        />
         <input
           id="inputLocation"
           name="location"
@@ -35,19 +39,15 @@
       <button id="addParty">Add Party</button>
     </form>
     <section>
-      <div id="delete">
+      <div id="buttons">
         <output></output>
       </div>
       <div id="partyName">
         <h3>Name</h3>
         <output></output>
       </div>
-      <div id="partyDate">
-        <h3>Date</h3>
-        <output></output>
-      </div>
-      <div id="partyTime">
-        <h3>Time</h3>
+      <div id="partyDateTime">
+        <h3>Date & Time</h3>
         <output></output>
       </div>
       <div id="partyLocation">
@@ -59,6 +59,7 @@
         <output></output>
       </div>
     </section>
+    <button id="deleteBtn">Delete Party</button>
   </body>
   <script src="index.js"></script>
 </html>
