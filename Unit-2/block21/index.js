@@ -5,7 +5,7 @@ const url =
 const getAllParties = async () => {
   try {
     const response = await fetch(url);
-    const json = await response.json();
+    const json = await response.json(); // object == [{}{}{}{}]
     return json.data;
   } catch (error) {
     console.error(error);
@@ -27,6 +27,7 @@ const addNewParty = async (formData) => {
 };
 //delete function
 const deleteParty = async (id) => {
+  // [{id: 1, name: "Ryan's Party"}{id: 2, name: "Tor's Party"}]
   try {
     const response = await fetch(`${url}/${id}`, {
       method: "DELETE",
@@ -41,6 +42,7 @@ const deleteParty = async (id) => {
 const renderParties = async () => {
   // call api to get all parties as json
   const arrContent = await getAllParties();
+  // define our html components
   const buttonOutput = document.querySelector("#buttons output");
   const nameOutput = document.querySelector("#partyName output");
   const dateOutput = document.querySelector("#partyDateTime output");
