@@ -66,7 +66,7 @@ const renderParties = async () => {
     newButton.textContent = "Delete";
     newButton.setAttribute("class", obj.id);
     newName.textContent = obj.name;
-    newDate.textContent = obj.date;
+    newDate.textContent = new Date(obj.date).toLocaleString();
     newLocation.textContent = obj.location;
     newDescription.textContent = obj.description;
 
